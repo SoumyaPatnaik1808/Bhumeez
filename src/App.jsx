@@ -1,5 +1,5 @@
 import React from 'react'
-import Navigation from './Components/navigation'
+import Navigation from './Components/Navigation'
 
 
 const App = () => {
