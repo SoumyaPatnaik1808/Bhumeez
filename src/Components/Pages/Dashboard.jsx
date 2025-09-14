@@ -1,21 +1,43 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { LanguageIcon, ChatBubbleLeftRightIcon } from '@heroicons/react/24/outline';
+
 const Dashboard = () => {
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+    // You can add your logout logic here, like clearing user session, tokens, etc.
+    alert("Logging out...");
+    navigate('/login'); 
+  };
+
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col items-center p-6">
-      {/* Header */}
+      {/* Top Header */}
       <div className="w-full max-w-4xl flex justify-between items-center mb-6">
         <div className="flex items-center space-x-2">
-          <span className="text-green-600">🌱</span> 
-
-          <h1 className="text-xl font-semibold text-gray-800">SmartFarm AI</h1>
+          <span className="text-green-600">🌱</span>
+          <h1 className="text-xl font-semibold text-gray-800">Bhumeez</h1>
         </div>
-        <div className="space-x-2">
-          <button className="text-gray-600 hover:text-gray-800">Home</button>
-          <button className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Dashboard</button>
+        <div className="space-x-2 flex items-center">
+          <button className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">
+            Dashboard
+          </button>
+          <button 
+            onClick={handleLogout} 
+            className="bg-gray-200 text-gray-800 px-4 py-2 rounded hover:bg-gray-300"
+          >
+            Log Out
+          </button>
+          <Link 
+            to="/lang-app" 
+            className="text-gray-600 hover:text-gray-800 p-2 rounded-full border border-gray-400"
+          >
+            <LanguageIcon className="h-6 w-6" />
+          </Link>
         </div>
       </div>
-
+      
       {/* Dashboard Title */}
       <div className="w-full max-w-4xl mb-6">
         <h2 className="text-2xl font-bold text-gray-900">Farm Dashboard</h2>
@@ -70,6 +92,17 @@ const Dashboard = () => {
           Get Detailed Report
         </button>
       </div>
+
+      {/* Fixed Bottom Navigation Bar */}
+      <div className="fixed bottom-0 left-0 right-0 w-full bg-white border-t border-gray-200 p-4 flex justify-end z-50">
+        <span className="text-gray-600">How's my farm doing?</span>
+  <Link 
+    to="/chat" 
+    className="text-gray-600 hover:text-gray-800 p-3 rounded-full border border-gray-400"
+  >
+    <ChatBubbleLeftRightIcon className="h-7 w-7" />
+  </Link>
+</div>
     </div>
   );
 };

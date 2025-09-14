@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom"; 
-import LangApp from "./Pages/LangApp"; // ✅ rename your file to LangApp.jsx
+import LangApp from "./Pages/LangApp"; 
 import  Features  from "./Features";
 import Dashboard from "./Pages/Dashboard";  
 import LogIn from "./Pages/LogIn";
@@ -30,7 +30,7 @@ const Home = () => {
       </div>
       <div className="relative z-10 p-">
         <h1 className="text-6xl font-bold text-gray-900 mb-5 flex items-center justify-center p-5">
-          SmartFarm AI 🌱
+          Bhumeez 🌱
         </h1>
         <p className="text-xl text-gray-700 mb-6">
           IoT + AI powered farming assistant for better yield, profit, and sustainability.
@@ -41,9 +41,10 @@ const Home = () => {
               Get Started
             </button>
           </Link>
-          <button className="bg-gray-300 text-gray-800 px-6 py-2 font-bold rounded-2xl hover:bg-gray-400">
+            <button className="bg-gray-300 text-gray-800 px-6 py-2 font-bold rounded-2xl hover:bg-gray-400">
             Learn More
           </button>
+        
         </div>
       </div>
    
