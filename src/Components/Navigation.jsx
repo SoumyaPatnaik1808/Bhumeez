@@ -30,7 +30,7 @@ const Home = () => {
       </div>
       <div className="relative z-10 p-">
         <h1 className="text-6xl font-bold text-gray-900 mb-5 flex items-center justify-center p-5">
-          SmartFarm AI 🌱
+          Bhumeez 🌱
         </h1>
         <p className="text-xl text-gray-700 mb-6">
           IoT + AI powered farming assistant for better yield, profit, and sustainability.

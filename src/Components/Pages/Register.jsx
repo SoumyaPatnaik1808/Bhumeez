@@ -1,11 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Register = () => {
   return (
     <div className="min-h-screen bg-gray-100 flex items-center justify-center p-6">
       <div className="w-full max-w-md">
         <div className="text-center mb-6">
-          <h1 className="text-2xl font-semibold text-gray-800">AgriSense AI</h1>
+          <h1 className="text-2xl font-semibold text-gray-800">Bhumeez</h1>
           <p className="text-gray-600">Start your journey to smarter, sustainable farming 🌱</p>
         </div>
         <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-200">
@@ -74,12 +75,15 @@ const Register = () => {
                 <option value="fr">French</option>
               </select>
             </div>
-            <button
+            <Link to={"/dashboard"}>
+             <button
               type="submit"
               className="w-full bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition"
             >
               Create Account
             </button>
+             </Link>
+           
             <p className="text-center text-gray-600 text-sm">
               By signing up, you agree to our <a href="#" className="text-green-600 hover:underline">Terms & Privacy</a>
             </p>
