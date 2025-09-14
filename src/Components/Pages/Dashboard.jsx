@@ -20,10 +20,10 @@ const Dashboard = () => {
           <h1 className="text-xl font-semibold text-gray-800">Bhumeez</h1>
         </div>
         <div className="space-x-2 flex items-center">
-          <button className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">
+          {/* <button className="text-white px-4 py-2 rounded hover:bg-green-600">
             Dashboard
-          </button>
-          <button 
+          </button>*/}
+          <button  
             onClick={handleLogout} 
             className="bg-gray-200 text-gray-800 px-4 py-2 rounded hover:bg-gray-300"
           >

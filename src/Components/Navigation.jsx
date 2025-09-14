@@ -5,6 +5,7 @@ import  Features  from "./Features";
 import Dashboard from "./Pages/Dashboard";  
 import LogIn from "./Pages/LogIn";
 import Register from "./Pages/Register";
+import Chat from "./Pages/Chat";
 
 const Navigation = () => {
   return ( 
@@ -15,6 +16,7 @@ const Navigation = () => {
         <Route path="/lang-app" element={<LangApp />} />
         <Route path="/login" element={<LogIn/>}> </Route>
         <Route path="/register" element={<Register/>}> </Route>
+        <Route path="/chat" element={<Chat/>}> </Route>
       </Routes>
     </BrowserRouter>
   );
