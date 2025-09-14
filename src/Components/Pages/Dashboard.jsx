@@ -1,12 +1,13 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 const Dashboard = () => {
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col items-center p-6">
       {/* Header */}
       <div className="w-full max-w-4xl flex justify-between items-center mb-6">
         <div className="flex items-center space-x-2">
-          <span className="text-green-600">🌱</span>
+          <span className="text-green-600">🌱</span> 
+
           <h1 className="text-xl font-semibold text-gray-800">SmartFarm AI</h1>
         </div>
         <div className="space-x-2">

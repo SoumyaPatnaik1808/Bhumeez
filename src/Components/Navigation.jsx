@@ -3,6 +3,8 @@ import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import LangApp from "./Pages/LangApp"; // ✅ rename your file to LangApp.jsx
 import  Features  from "./Features";
 import Dashboard from "./Pages/Dashboard";  
+import LogIn from "./Pages/LogIn";
+import Register from "./Pages/Register";
 
 const Navigation = () => {
   return ( 
@@ -11,6 +13,8 @@ const Navigation = () => {
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/" element={<Home />} />
         <Route path="/lang-app" element={<LangApp />} />
+        <Route path="/login" element={<LogIn/>}> </Route>
+        <Route path="/register" element={<Register/>}> </Route>
       </Routes>
     </BrowserRouter>
   );
@@ -32,7 +36,7 @@ const Home = () => {
           IoT + AI powered farming assistant for better yield, profit, and sustainability.
         </p>
         <div className="space-x-4">
-          <Link to="/lang-app">
+          <Link to="/login">
             <button className="bg-green-700 text-white px-6 py-2 font-bold rounded-2xl hover:bg-green-600">
               Get Started
             </button>
