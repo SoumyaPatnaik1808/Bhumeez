@@ -8,7 +8,7 @@ const Dashboard = () => {
         <div className="flex items-center space-x-2">
           <span className="text-green-600">🌱</span> 
 
-          <h1 className="text-xl font-semibold text-gray-800">SmartFarm AI</h1>
+          <h1 className="text-xl font-semibold text-gray-800">Bhumeez</h1>
         </div>
         <div className="space-x-2">
           <button className="text-gray-600 hover:text-gray-800">Home</button>
