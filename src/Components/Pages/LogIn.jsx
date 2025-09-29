@@ -46,8 +46,8 @@ export default function LoginPage() {
     <div className="min-h-screen bg-yellow-50 flex items-center justify-center p-6">
       <div className="w-full max-w-md">
         <div className="text-center mb-6">
-          <h1 className="text-2xl font-semibold text-gray-800">Bhumeez🌱</h1>
-          <p className="text-gray-600">Welcome back, let's grow together! </p>
+          <h1 className="text-2xl font-semibold text-gray-800">Bhumeez</h1>
+          <p className="text-gray-600">Welcome back, let's grow together! 🌱</p>
         </div>
         <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-200">
           <h2 className="text-lg font-medium text-gray-900 mb-4">Sign in to your account</h2>
