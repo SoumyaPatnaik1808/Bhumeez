@@ -71,15 +71,14 @@ const Register = () => {
               >
                 <option>Select your preferred language</option>
                 <option value="en">English</option>
-                <option value="es">Spanish</option>
-                <option value="fr">French</option>
-              </select> 
+                <option value="hi">हिन्दी</option>
+                <option value="bn">বাংলা</option>
+                <option value="or">ଓଡ଼ିଆ</option>
+              </select>
              <label className="block text-gray-700 mt-5 text-sm font-bold mb-2" htmlFor="confirmPassword">
                 Enter your Farm Size
               </label> 
               <input class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" id="fullName" placeholder="Enter your Farm Size" type="text"></input>
-
-
             </div>
             <Link to={"/dashboard"}>
              <button

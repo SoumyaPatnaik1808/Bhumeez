@@ -1,10 +1,11 @@
 import React from "react";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom"; 
-import LangApp from "./Pages/LangApp"; // ✅ rename your file to LangApp.jsx
+import LangApp from "./Pages/LangApp"; 
 import  Features  from "./Features";
 import Dashboard from "./Pages/Dashboard";  
 import LogIn from "./Pages/LogIn";
 import Register from "./Pages/Register";
+import Chat from "./Pages/Chat";
 
 const Navigation = () => {
   return ( 
@@ -15,6 +16,7 @@ const Navigation = () => {
         <Route path="/lang-app" element={<LangApp />} />
         <Route path="/login" element={<LogIn/>}> </Route>
         <Route path="/register" element={<Register/>}> </Route>
+        <Route path="/chat" element={<Chat/>}> </Route>
       </Routes>
     </BrowserRouter>
   );
@@ -41,9 +43,10 @@ const Home = () => {
               Get Started
             </button>
           </Link>
-          <button className="bg-gray-300 text-gray-800 px-6 py-2 font-bold rounded-2xl hover:bg-gray-400">
+            <button className="bg-gray-300 text-gray-800 px-6 py-2 font-bold rounded-2xl hover:bg-gray-400">
             Learn More
           </button>
+        
         </div>
       </div>
    
