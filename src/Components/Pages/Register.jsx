@@ -5,8 +5,8 @@ const Register = () => {
     <div className="min-h-screen bg-gray-100 flex items-center justify-center p-6">
       <div className="w-full max-w-md">
         <div className="text-center mb-6">
-          <h1 className="text-2xl font-semibold text-gray-800">AgriSense AI</h1>
-          <p className="text-gray-600">Start your journey to smarter, sustainable farming 🌱</p>
+          <h1 className="text-2xl font-semibold text-gray-800">Bhumeez 🌱</h1>
+          <p className="text-gray-600">Start your journey to smarter, sustainable farming </p>
         </div>
         <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-200">
           <form className="space-y-4">
@@ -70,8 +70,9 @@ const Register = () => {
               >
                 <option>Select your preferred language</option>
                 <option value="en">English</option>
-                <option value="es">Spanish</option>
-                <option value="fr">French</option>
+                <option value="hi">हिन्दी</option>
+                <option value="bn">বাংলা</option>
+                <option value="or">ଓଡ଼ିଆ</option>
               </select>
             </div>
             <button

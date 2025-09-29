@@ -74,15 +74,15 @@ const Dashboard = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           <div>
             <p className="text-gray-600">Best Crop</p>
-            <p className="text-green-600 font-semibold">✔ Wheat</p>
+            <p className="text-green-600 font-semibold">✔ Rice</p>
           </div>
           <div>
             <p className="text-gray-600">Expected Yield</p>
-            <p className="text-green-600 font-semibold">2.3 tons/acre</p>
+            <p className="text-green-600 font-semibold">10.59 quintals/acre</p>
           </div>
           <div>
-            <p className="text-gray-600">Profit Estimate</p>
-            <p className="text-green-600 font-semibold">€45,000</p>
+            <p className="text-gray-600">Net Profit Estimate</p>
+            <p className="text-green-600 font-semibold">Rs. 2915.84 /acre</p>
           </div>
         </div>
         <p className="text-gray-600 mt-4">
