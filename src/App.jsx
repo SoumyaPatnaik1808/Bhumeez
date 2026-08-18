@@ -1,4 +1,5 @@
 import React from 'react'
+<<<<<<< HEAD
 import { BrowserRouter, Routes, Route } from "react-router-dom"; 
 import LangApp from './Components/Pages/LangApp'; // ✅ rename your file to LangApp.jsx
 import Dashboard from './Components/Pages/Dashboard';  
@@ -20,6 +21,18 @@ const App = () => {
     </BrowserRouter>
  
   );
+=======
+import Navigation from './Components/navigation'
+
+
+const App = () => {
+  return (
+    
+    <div>
+      <Navigation/> 
+    </div>
+  )
+>>>>>>> f5d4cdf (Co-authored-by: Abhijeet2923 <Abhijeet2923@users.noreply.github.com>)
 }
 
 export default App

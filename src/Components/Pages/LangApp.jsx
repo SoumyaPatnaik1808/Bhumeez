@@ -1,7 +1,12 @@
 // App.js
 import React, { useState } from 'react';
+<<<<<<< HEAD
 import { Link } from "react-router-dom"; 
 
+=======
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom"; 
+import Dashboard from './Dashboard';
+>>>>>>> f5d4cdf (Co-authored-by: Abhijeet2923 <Abhijeet2923@users.noreply.github.com>)
 const LangApp = () => {
 
   const [selectedLanguage, setSelectedLanguage] = useState('English');
